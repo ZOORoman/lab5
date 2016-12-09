@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block title %}Feed{% endblock %}
+{% block content %}
+    <div class="container" style="max-width: 800px">
+        <div class="jumbotron">
+            <div class="row">
+                {% for image in feed %}
+                            {% include 'items.html' %}
+                {% endfor %}
+            </div>
+       </div>
+    </div>
+{% endblock %}
