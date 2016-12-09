@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css">
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="/">InstaBMSTU</a>
+    </div>
+    <div class="container-fluid">
+        <ul class="nav navbar-nav">
+            <li><a href="/feed">Feed</a></li>
+        </ul>
+    </div>
+</nav>
+{% block content %}{% endblock %}
+</body>
+</html>
